@@ -1,8 +1,13 @@
 # Note: you need to be using OpenAI Python v0.27.0 for the code below to work
 import openai
+import moviepy.editor as mp
+
+# def separate():
+#     my_clip = mp.VideoFileClip(r"video.mp4")
+#     my_clip.audio.write_audiofile(r"audio.mp4")
 
 def convert():
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     # prompt = """
     # Please transcribe the following audio file:
@@ -10,7 +15,9 @@ def convert():
     # include filler words and punctuation.
     # """
 
-    audio_file= open("./test_file.mp4", "rb")
+    # separate()
+
+    audio_file= open("./video.mp4", "rb")
     transcript = openai.Audio.transcribe("whisper-1", audio_file)
 
     f = open('transcript.txt', 'w')

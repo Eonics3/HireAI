@@ -2,7 +2,7 @@
 import openai
 
 def generate_questions():
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     f1 = open('job_info.txt', 'r')
     job_info = f1.readlines()
