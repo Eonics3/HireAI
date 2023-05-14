@@ -16,7 +16,7 @@ def home():
     return render_template("index.html")
 
 @app.route('/', methods=['POST'])
-def upload():
+def uploadQuestion():
     if request.method == 'POST':
         company = request.form['company']
         position = request.form['position']
@@ -33,8 +33,6 @@ def upload():
         # Save resume to a pdf file
         resume.save('resume.pdf')
 
-        print("running main()... ")
-
         main.p1()
 
         # Save resume and mp4 to database or file system
@@ -47,6 +45,18 @@ def questions():
 
     return render_template('questions.html',q1=questions[0],q2=questions[1],q3=questions[2])
 
+@app.route('/questions', methods=['POST'])
+def uploadVideo():
+    video = request.files['video']
+    video.save('video.mp4')
+
+    return redirect(f'/feedback')
+
+@app.route('/feedback')
+def feedback():
+    f = open('videofeedback.txt', 'r')
+
+    return render_template('feedback.html')
 
 if __name__=='__main__':
     app.run(debug=True) 

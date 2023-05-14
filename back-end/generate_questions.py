@@ -18,8 +18,8 @@ def generate_questions():
     messages=[
             {"role": "system", "content": "You are generating practice interview questions for interested software engineering interviewees at %s. Here is the \
     interviewees resume: %s. Please use their resume to give 2 short and simple resume-related questions and one behavioral question. \
-    Generate a list of questions separated by newlines." % (job_info, resume)},
-            {"role": "user", "content": "Generate 3 practice interview questions."},
+    Generate a list of questions separated by newlines but don't label them." % (job_info, resume)},
+            {"role": "user", "content": "Generate THREE practice interview questions. Format them without bullet points."},
         ]
     )
 
