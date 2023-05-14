@@ -1,7 +1,0 @@
-openai
-pydub
-PyPDF2
-ffmpeg 
-moviepy
-deepgram-sdk
-ibm_watson
