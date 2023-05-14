@@ -1,9 +1,22 @@
 import openai
 from config import OPENAI_API_KEY
 
-def findScore(txt):
-    score = [int(s) for s in txt.split() if s.isdigit()]
-    return score
+def parse_questions(response):
+    print("in parse_questions...")
+
+    question_num = 1  # Initialize the question number
+
+    lines = response.splitlines()
+
+    for line in lines:
+        if line.strip().startswith("Question"):
+            new_file = open('question%d.txt' % question_num, 'w')
+            new_file.write(line.strip() + "\n")
+            question_num += 1
+        elif line.strip() != "":
+            new_file.write(line + "\n")
+
+        # new_file.close()  # Close the file after writing to it
 
 def evaluate_content():
     f = open("transcript.txt", 'r')
@@ -24,31 +37,14 @@ def evaluate_content():
         model="gpt-3.5-turbo",
         temperature=.3,
         messages=[
-            {"role": "system", "content": "Give feedback on how users can improve their interviewing skills for a software engineer internship at %s for each of the three questions. Write the feedback without using first-person perspective. \
+            {"role": "system", "content": "Give feedback on how users can improve their interviewing skills for a software engineer internship at %s for each of the THREE questions. Write the feedback without using first-person perspective. \
              Format your answers like: Question 1: ... [Feedback for question 1.] Question 2: ... [Feedback for question 2.] Question 3: ... [Feedback\
-              for questions 3.] In the last sentence of your response, write a score from 1-100, too." % job_info},
-            {"role": "user", "content": "Here's my resume: %s. Here is my transcript %s. Please list around 4 sentences feedback for EACH of my interview responses to EACH of the following questions: %s." % (resume, transcript, questions)},
+              for questions 3.]" % job_info},
+            {"role": "user", "content": "Here's my resume: %s. Here is my transcript %s. List 3 sentences of feedback for my interview responses to each of the THREE following questions: %s. I would like separated feedback for each of the three questions." % (resume, transcript, questions)},
         ]
     )
 
     response = response['choices'][0]['message']['content']
     # parse the last sentence from output to find score.
 
-    index = response.rindex('.', 0, len(response)-2)
-
-    score = findScore(response[index:]) # string number
-
-    print("score: ", score)
-
-    response = response[:index]
-
-    print(response)
-    print("Score (1-100): ", score)
-
-    # TODO: parse each response
-
-    # response_list = 
-    if len(score)==1:
-        return response, score[0]
-    else:
-        return response, 70
+    parse_questions(response)
