@@ -26,7 +26,7 @@ def upload():
         job_info = company + ' ' + position
         
         # Save job_info to a text file
-        file_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'job_info.txt')
+        file_path = os.path.join('job_info.txt')
         with open(file_path, 'w') as file:
             file.write(job_info)
 
@@ -38,14 +38,14 @@ def upload():
         main.p1()
 
         # Save resume and mp4 to database or file system
-        return redirect(f'/questions?position={position}&company={company}')
+        return redirect(f'/questions')
 
 @app.route('/questions')
 def questions():
-    position = request.args.get('position')
-    company = request.args.get('company')
+    f = open('questions.txt', 'r')
+    questions = f.readlines()
 
-    return render_template('questions.html', position=position, company=company)
+    return render_template('questions.html',q1=questions[0],q2=questions[1],q3=questions[2])
 
 
 if __name__=='__main__':
