@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 
-app = Flask(__name__, template_folder='../front-end/templates')
+app = Flask(__name__, template_folder='../front-end', static_folder='../front-end/assets')
 
 @app.route("/")
 def home():

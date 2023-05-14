@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <label for="company">Company</label>
+        <input type="text" name="company" id="company">
+        <br />
+
+        <label for="position">Job Position</label>
+        <input type="text" name="position" id="position">
+        <br />
+
+        <label for="resume">Resume</label>
+        <input type="file" accept="application/pdf" name="resume" id="resume">
+        <br />
+
+        <label for="video">Video</label>
+        <input type="file" accept="video/mp4" name="video" id="video">
+        <br />
+        <input type="submit" value="submit"/>
+    </form>
+</body>
+</html>
