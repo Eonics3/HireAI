@@ -1,5 +1,5 @@
-Question 3: How do you stay up-to-date with the latest developments and trends in the field of computer science?
-Feedback for question 3:
-- Your response was somewhat brief and could benefit from more detail. Consider providing specific examples of how you stay informed about the latest developments and trends in computer science, such as attending conferences, reading industry publications, or participating in online communities.
-- It would be helpful to emphasize your passion for learning and your commitment to staying current with industry best practices.
-- Consider highlighting any specific areas of computer science that you are particularly interested in, as this can demonstrate your depth of knowledge and expertise in the field.
+Question 3: How do you stay current with the latest developments and advancements in software engineering?
+Feedback:
+1. Your response lacked specific examples of how you stay current with the latest developments in software engineering. Consider providing specific examples of resources you utilize, such as online courses, industry publications, or attending conferences.
+2. It would be beneficial to highlight any personal projects or initiatives you have undertaken to further your knowledge and skills in software engineering.
+3. Consider discussing any challenges you have faced in staying current with the latest developments and how you have overcome them. This would demonstrate your adaptability and willingness to learn.

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, jsonify
+from flask import Flask, render_template, request, redirect, send_from_directory
 import os
 # import main.py from "../models/main.py"
 # import os
@@ -9,7 +9,36 @@ import sys
 # sys.path.append( mymodule_dir )
 import main
 
-app = Flask(__name__, template_folder='../front-end', static_folder='../front-end/assets')
+app = Flask(__name__, template_folder='../front-end')
+app.static_folder = '../front-end/assets'
+
+# Define the path to the vendor folder
+vendor_path = '../front-end/vendor'
+
+# Serve the feedback.html file from the static_folder
+@app.route('/feedback.html')
+def serve_feedback():
+    return send_from_directory(app.static_folder, 'feedback.html')
+
+# Serve files from the vendor folder
+@app.route('/vendor/<path:filename>')
+def serve_vendor_file(filename):
+    return send_from_directory(vendor_path, filename)
+
+# Add all the JS files from the js folder to the static_folder for feedback.html
+@app.route('/js/<path:filename>')
+def serve_js_file(filename):
+    return send_from_directory('../front-end/js', filename)
+
+# Add all the CSS files from the css folder to the static_folder for feedback.html
+@app.route('/css/<path:filename>')
+def serve_css_file(filename):
+    return send_from_directory('../front-end/css', filename)
+
+# Add all the CSS files from the css folder to the static_folder for feedback.html
+@app.route('/img/<path:filename>')
+def serve_img_file(filename):
+    return send_from_directory('../front-end/img', filename)
 
 @app.route("/")
 def home():
@@ -49,6 +78,8 @@ def questions():
 def uploadVideo():
     video = request.files['video']
     video.save('video.mp4')
+    main.p2()
+
 
     return redirect(f'/feedback')
 
@@ -62,19 +93,18 @@ def feedback():
         q3_line = file.readlines()
     filler_num_file = open('filler_num.txt', 'r')
     sentiment_file = open('sentiment.txt', 'r')
+    l1 = q1_line[0]
+    l2 = q2_line[0]
+    l3 = q3_line[0]
 
-    last_1lines = q1_line[-4:]
-    last_2lines = q2_line[-4:]
-    last_3lines = q3_line[-4:]
-
-    q1 = ''.join(last_1lines)
-    q2 = ''.join(last_2lines)
-    q3 = ''.join(last_3lines)
+    q1 = '\n'.join(q1_line[-4:])
+    q2 = '\n'.join(q2_line[-4:])
+    q3 = '\n'.join(q3_line[-4:])
 
     filler_num = float(filler_num_file.readline())
     sentiment = float(sentiment_file.readline())
 
-    return render_template('feedback.html',q1=q1,q2=q2,q3=q3, filler_num=filler_num, sentiment=sentiment)
+    return render_template('feedback.html',l1=l1,l2=l2,l3=l3,q1=q1,q2=q2,q3=q3, filler_num=filler_num, sentiment=sentiment)
 
 if __name__=='__main__':
     app.run(debug=True) 

@@ -1,5 +1,5 @@
-Question 1: What motivated you to pursue a career in computer science and what has been your most meaningful experience in the field so far?
-Feedback for question 1:
-- Your response lacked specificity and detail. Consider providing more concrete examples or anecdotes to illustrate your motivation and meaningful experience in computer science.
-- It would be helpful to highlight any specific projects or initiatives you have undertaken in the field, as this can demonstrate your passion and dedication.
-- Consider emphasizing the impact that computer science has had on your life and career goals, as this can help to convey your enthusiasm and commitment to the field.
+Question 1: Can you describe a project that you worked on where you collaborated with a team? What was your role and how did you contribute to the success of the project?
+Feedback:
+1. Your response lacked specific details about the project you worked on. It would be helpful to provide more information about the project's scope, goals, and timeline.
+2. You briefly mentioned your role in the project but did not elaborate on how you contributed to its success. It would be beneficial to provide specific examples of tasks you completed and how they impacted the project's outcome.
+3. Consider highlighting any challenges you faced while collaborating with the team and how you overcame them. This would demonstrate your problem-solving skills and ability to work well in a team environment.
