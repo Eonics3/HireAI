@@ -1,3 +1,5 @@
-1. Can you tell me more about your experience working on Gitlytics? How did you approach the project and what was your role on the team?
-2. How have you handled a situation where you faced a complex technical challenge? Can you walk me through your problem-solving process?
-3. Tell me about a time when you had to work with a difficult team member or client. How did you manage the situation, and what did you learn from it?
+1. What motivated you to pursue a career in computer science and what has been your most meaningful experience in the field so far?
+
+2. Can you describe a project that you have worked on in the past where you had to overcome technical challenges? How did you approach and solve those challenges?
+
+3. One of the important traits for a Google intern is the ability to collaborate and communicate effectively with others. Can you give an example of a project where you worked in a team and how did you communicate with your teammates to ensure the project's success?

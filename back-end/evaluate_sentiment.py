@@ -23,4 +23,7 @@ def evaluate_sentiment():
         if(result['label']=="POSITIVE"):
             total_sentiment+=result['score']
 
-    return total_sentiment/num_samples
+    f = open('sentiment.txt', 'w')
+    f.write(str(total_sentiment/num_samples * 100))
+
+    # return total_sentiment/num_samples

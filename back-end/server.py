@@ -54,9 +54,30 @@ def uploadVideo():
 
 @app.route('/feedback')
 def feedback():
-    f = open('videofeedback.txt', 'r')
+    with open("question1.txt", 'r') as file:
+        q1_line = file.readlines()
+    with open("question2.txt", 'r') as file:
+        q2_line = file.readlines()
+    with open("question3.txt", 'r') as file:
+        q3_line = file.readlines()
+    filler_num_file = open('filler_num.txt', 'r')
+    sentiment_file = open('sentiment.txt', 'r')
 
-    return render_template('feedback.html')
+    last_1lines = q1_line[-4:]
+    last_2lines = q2_line[-4:]
+    last_3lines = q3_line[-4:]
+
+    q1 = ''.join(last_1lines)
+    q2 = ''.join(last_2lines)
+    q3 = ''.join(last_3lines)
+
+    filler_num = float(filler_num_file.readline())
+    sentiment = float(sentiment_file.readline())
+
+
+
+
+    return render_template('feedback.html',q1=q1,q2=q2,q3=q3, filler_num=filler_num, sentiment=sentiment)
 
 if __name__=='__main__':
     app.run(debug=True) 
