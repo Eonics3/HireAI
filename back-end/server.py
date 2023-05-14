@@ -74,9 +74,6 @@ def feedback():
     filler_num = float(filler_num_file.readline())
     sentiment = float(sentiment_file.readline())
 
-
-
-
     return render_template('feedback.html',q1=q1,q2=q2,q3=q3, filler_num=filler_num, sentiment=sentiment)
 
 if __name__=='__main__':
