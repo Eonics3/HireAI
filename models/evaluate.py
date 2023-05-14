@@ -1,10 +1,11 @@
 import openai
+from config import OPENAI_API_KEY
 
 def evaluate_content():
     f = open("transcript.txt", 'r')
     transcript = f.readlines()
 
-    openai.api_key = "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"
+    openai.api_key = OPENAI_API_KEY
 
     f2 = open('resume.txt', 'r')
     resume = f2.readlines()

@@ -1,8 +1,9 @@
 # Note: you need to be using OpenAI Python v0.27.0 for the code below to work
 import openai
+from config import OPENAI_API_KEY
 
 def generate_questions():
-    openai.api_key = "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"
+    openai.api_key = OPENAI_API_KEY
 
     f1 = open('job_info.txt', 'r')
     job_info = f1.readlines()

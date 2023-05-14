@@ -1,13 +1,14 @@
 # Note: you need to be using OpenAI Python v0.27.0 for the code below to work
 import openai
 import moviepy.editor as mp
+from config import OPENAI_API_KEY
 
 # def separate():
 #     my_clip = mp.VideoFileClip(r"video.mp4")
 #     my_clip.audio.write_audiofile(r"audio.mp4")
 
 def convert():
-    openai.api_key = "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"
+    openai.api_key = OPENAI_API_KEY
 
     # prompt = """
     # Please transcribe the following audio file:

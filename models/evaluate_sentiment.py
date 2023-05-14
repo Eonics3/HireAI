@@ -17,4 +17,3 @@ response = natural_language_understanding.analyze(
     features=Features(emotion=EmotionOptions(targets=['apples','oranges']))).get_result()
 
 print(json.dumps(response, indent=2))
-
