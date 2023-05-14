@@ -1,5 +1,13 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, redirect, jsonify
 import os
+# import main.py from "../models/main.py"
+# import os
+import sys
+
+# script_dir = os.path.dirname( __file__ )
+# mymodule_dir = os.path.join( script_dir, '..', 'models')
+# sys.path.append( mymodule_dir )
+import main
 
 app = Flask(__name__, template_folder='../front-end', static_folder='../front-end/assets')
 
@@ -23,10 +31,22 @@ def upload():
             file.write(job_info)
 
         # Save resume to a pdf file
-        resume.save(os.path.join(os.pardir, 'models', 'resume.pdf'))
+        resume.save('resume.pdf')
+
+        print("running main()... ")
+
+        main.p1()
 
         # Save resume and mp4 to database or file system
-        return jsonify({'message': [company,position]})
+        return redirect(f'/questions?position={position}&company={company}')
+
+@app.route('/questions')
+def questions():
+    position = request.args.get('position')
+    company = request.args.get('company')
+
+    return render_template('questions.html', position=position, company=company)
+
 
 if __name__=='__main__':
     app.run(debug=True) 
