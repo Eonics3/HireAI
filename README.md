@@ -1,4 +1,4 @@
-# sbhacks-2023
+# HireAI for SBHacks IV 2023
 ## ☁️ Inspiration
 For this project, we wanted to create a tool to help undergraduate students ace their behavioral interviews using Artificial Intelligence. We wanted to use Artificial Intelligence because of the massive impact it has had on society so far. In addition, we wanted to experiment with generative AI - specifically ChatGPT's API. 
 We first decided on the overall theme and audience, which was to focus on helping students using some AI tool. At first, we considered developing technologies to assist disadvantaged students, such as a sign language object detection model or an AI model that converted audio clips into cheat sheets. However, while these ideas were practical and seemed fun to code, we felt like an AI interview helper would be an exciting way to experiment with Generative AI and Natural Language Processing. In addition, we all agreed that an AI interview helper would be very useful and relevant, especially given this audience. 
