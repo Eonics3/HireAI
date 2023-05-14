@@ -13,7 +13,6 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -47,7 +46,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>INT WIZ</h1>
+        <h1>Hire AI</h1>
       </a>
 
     </div>
@@ -59,10 +58,10 @@
     <div class="container">
       <div class="row gy-4 d-flex justify-content-center">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h2 data-aos="fade-up">AI SWE Interview Tutor</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Welcome to AI SWE Interview Tutor. Please input the company of interset, job position, and upload your resume to get started!</p>
+          <h2 data-aos="fade-up">AI SWE Interview</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Welcome to AI SWE Interview Tutor. Please input the company of interest, job position, and upload your resume to get started!</p>
 
-      <form action="{{ url_for('uploadQuestions') }}" method="post" enctype="multipart/form-data">
+      <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
           <!--job position input-->
           <div  class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
             <input name = "company" id = "company" type="text" class="form-control" placeholder="Company">
@@ -79,7 +78,6 @@
             <input name = "resume" class="form-control" type="file" id="resume">
           </div>
         </div>
-        
 
         <!--get questions button -->
         <div class="row mb-3" data-aos="fade-up" data-aos-delay="200">

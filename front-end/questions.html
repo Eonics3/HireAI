@@ -44,6 +44,8 @@
           background-image: url('background2.jpg');
           background-repeat:no-repeat;
           background-size:cover;
+          background-position: center center;
+          background-attachment: fixed;
         }
     </style>
 
@@ -71,10 +73,6 @@
   <!-- End Header -->
 
   <main id="main">
-
-    <p style="background-image: url('blue-abstract-gradient-wave-wallpaper_53876-108364.jpg');">
-    </p>
-
     <!-- ======= Questions Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
@@ -83,39 +81,57 @@
             </div>
             <div class="col-lg-6 content order-last  order-lg-first">
               <h3>Questions</h3>
+              <p>
+                Please answer these questions in a video recording and upload it for further evaluation.
               </p>
               <ul>
                 <li data-aos="fade-up" data-aos-delay="100">
                   <i class="bi bi-1-square-fill"></i>
                   <div>
-                    <h5>{{q1}}</h5>
+                    <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
                   </div>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-2-square-fill"></i>
                   <div>
-                    <h5>{{q2}}</h5>
+                    <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
                   </div>
                 </li>
                 <li data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-3-square-fill"></i>
                   <div>
-                    <h5>{{q3}}</h5>
-                  </div>
+                    <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                    <br />
+                </div>
                 </li>
               </ul>
             </div>
-        <div class="row" data-aos="fade-up" data-aos-delay="200">
-            <form action="{{ url_for('uploadVideo') }}" method="post" enctype="multipart/form-data">
-                <input name="video" id="video" type="file" accept="video/mp4"></input>
-                <input type="submit" value="submit"></input>
+
+    <!-- ======= input section ======= -->
+    <div class="container" data-aos="fade-up">
+    </div>
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">  
+            <h5>
+                Upload mock interview below:
+            </h5>
+      <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <!--upload video bar-->
+        <div class="row mb-2" data-aos="fade-up" data-aos-delay="200">
+            <form>
+            </div>
+                <input type="file" accept="video/mp4"></input>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
             </form>
         </div>
+     </form>
+    </div>
+
+    <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
   </main><!-- End #main -->
-    
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
