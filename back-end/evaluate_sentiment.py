@@ -25,5 +25,4 @@ def evaluate_sentiment():
 
     f = open('sentiment.txt', 'w')
     f.write(str(total_sentiment/num_samples * 100))
-
-    # return total_sentiment/num_samples
+    f.close()

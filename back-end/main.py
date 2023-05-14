@@ -10,8 +10,8 @@ def p1():
     resume_reader.readResume()
     generate_questions.generate_questions()
 
-async def p2():
-    await speech_to_text_deepgram.main()
+def p2():
+    # asyncio.run(speech_to_text_deepgram.main())
 
     evaluate.evaluate_content()
 #     filler, total = evaluate_filler.evaluate_filler()
@@ -26,6 +26,7 @@ async def p2():
     # figure out how to quantify filler from 0-100
 
     sentiment_score = evaluate_sentiment.evaluate_sentiment()
+    evaluate_filler.evaluate_filler()
     # if sentiment_score > 0.8:
     #     print("Great Job! Your attitude reflected positivity, a trait that is crucial for an interview.")
     # elif sentiment_score > 0.6:
@@ -35,8 +36,8 @@ async def p2():
     # else:
     #     print("Your attitude was poor. Positivity is a key trait interviewers look for, so improving your demeanor is a key area of your interview you could improve on. Here are some tips: https://www.indeed.com/career-advice/interviewing/tips-for-staying-positive-during-interview")
 
-async def main():
+def main():
     p1()
-    await p2()
+    p2()
 
-asyncio.run(main())
+# asyncio.run(main())

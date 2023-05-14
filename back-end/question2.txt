@@ -1,5 +1,5 @@
-Question 2: How do you approach problem-solving in your work as a software engineer?
-Feedback for question 2:
-- Your response was somewhat vague and general. Consider providing more specific examples of how you have approached problem-solving in the past, and what strategies or techniques you have found to be effective.
-- It would be helpful to emphasize your ability to work collaboratively with others, as this is an important aspect of problem-solving in many software engineering roles.
-- Consider highlighting any specific tools or technologies you have used to aid in problem-solving, as this can demonstrate your technical expertise and familiarity with industry best practices.
+Question 2: Can you walk me through your problem-solving process when faced with a difficult coding challenge?
+Feedback:
+1. Your response lacked structure and clarity. Consider organizing your answer into clear steps or stages of your problem-solving process.
+2. It would be helpful to provide a specific example of a difficult coding challenge you faced and how you approached it.
+3. Consider highlighting any tools or resources you utilized during your problem-solving process, such as online resources or collaboration with colleagues.

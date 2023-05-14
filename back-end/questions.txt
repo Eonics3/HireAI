@@ -1,5 +1,5 @@
-1. What motivated you to pursue a career in computer science and what has been your most meaningful experience in the field so far?
+1. Can you describe a project that you worked on where you collaborated with a team? What was your role and how did you contribute to the success of the project?
 
-2. Can you describe a project that you have worked on in the past where you had to overcome technical challenges? How did you approach and solve those challenges?
+2. How do you stay current with new developments and trends in the technology industry? Can you give an example of something you recently learned or read about that you found interesting?
 
-3. One of the important traits for a Google intern is the ability to collaborate and communicate effectively with others. Can you give an example of a project where you worked in a team and how did you communicate with your teammates to ensure the project's success?
+3. Can you tell me about a time when you faced a technical challenge and how you approached solving it? What tools and resources did you use and what was the outcome of your solution?

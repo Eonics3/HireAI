@@ -9,7 +9,7 @@ DEEPGRAM_API_KEY = 'b2bfc931a39b7449ececd1d3e01912efcfc41c59'
 # Location of the file you want to transcribe. Should include filename and extension.
 # Example of a local file: ../../Audio/life-moves-pretty-fast.wav
 # Example of a remote file: https://static.deepgram.com/examples/interview_speech-analytics.wav
-FILE = './test_file.mp4'
+FILE = './video.mp4'
 
 # Mimetype for the file you want to transcribe
 # Include this line only if transcribing a local file

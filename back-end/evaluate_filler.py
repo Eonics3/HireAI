@@ -14,4 +14,6 @@ def evaluate_filler():
             total+=1
 
     f = open('filler_num.txt', 'w')
+    print("filler/total: ", filler/total)
+
     f.write(str(100-(100 * (filler/total))))
