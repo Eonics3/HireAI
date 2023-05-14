@@ -39,4 +39,4 @@ async def main():
     p1()
     await p2()
 
-asyncio.run(main())
+# asyncio.run(main())
