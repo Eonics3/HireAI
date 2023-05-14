@@ -102,9 +102,9 @@
               </ul>
             </div>
         <div class="row" data-aos="fade-up" data-aos-delay="200">
-            <form>
-                <input type="file" accept="video/mp4"></input>
-                <input type="submit" ></input>
+            <form action="{{ url_for('uploadVideo') }}" method="post" enctype="multipart/form-data">
+                <input name="video" id="video" type="file" accept="video/mp4"></input>
+                <input type="submit" value="submit"></input>
             </form>
         </div>
 
