@@ -16,7 +16,7 @@ def home():
     return render_template("index.html")
 
 @app.route('/', methods=['POST'])
-def uploadQuestion():
+def uploadQuestions():
     if request.method == 'POST':
         company = request.form['company']
         position = request.form['position']
