@@ -1,3 +1,0 @@
-1. Can you explain your experience with machine learning frameworks like TensorFlow and Sci-kit Learn?
-2. How did you approach the creation of your Linear Function Approximation solution to the Travelling Salesman Problem project?
-3. Can you tell me about a time when you had to overcome a difficult challenge while working on a project? How did you handle it?
