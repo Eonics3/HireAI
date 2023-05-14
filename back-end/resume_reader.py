@@ -3,6 +3,13 @@ from PyPDF2 import PdfReader
 
 import os
 import sys
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print("path: ", dir_path)
+
+script_dir = os.path.dirname( __file__ )
+# mymodule_dir = os.path.join( script_dir, '..', 'alpha', 'beta' )
+sys.path.append( script_dir )
   
 
 def readResume():
