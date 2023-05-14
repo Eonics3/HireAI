@@ -22,17 +22,8 @@ try to use less filler words such as um, like, such as... during interviews.")
     else:
         print("You used very little filler words during your mock interview. Good job!")
 
-    
-
-# def m(company, position, resume, video):
-#     job_info = company + "\n" + position
-#     resume, questions = p1(resume, job_info)
-#     evaluation = p2(resume, job_info, video, questions)
-
-#     return evaluation()
-
 async def main():
     p1()
     await p2()
 
-asyncio.run(main())
+# asyncio.run(main())

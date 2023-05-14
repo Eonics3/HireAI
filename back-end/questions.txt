@@ -1,0 +1,3 @@
+1. Can you tell me about your experience in developing REST APIs using FastAPI and PostgreSQL?
+2. How did you approach troubleshooting computer problems brought by students, faculty, and staff in your previous IT support role?
+3. Can you describe a time when you had to collaborate with a team to develop a solution to a technical challenge? How did you contribute and what was the outcome?
