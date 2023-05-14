@@ -1,0 +1,45 @@
+Rolan Guang
+858-538-6081 |rguang@ucsb.edu |linkedin.com/in/rolan-guang |github.com/golanruang
+Education
+University of California Santa Barbara Santa Barbara, CA
+Bachelor of Science in Computer Science, Minor in Physics; GPA: 4.0/4.0, Regents Scholar Sept. 2022 – June 2025
+Relevant Coursework Data Structures and Algorithms, Advanced C++, Discrete Math, Probability and Statistics
+Experience
+Research Intern June 2021 – October 2021
+San Diego Supercomputer Center San Diego, CA
+•Cleaned and analyzed Sleep EEG and MEG data using R
+•Created three Spatiotemporal Isosurfaces visualizations using MATLAB, VizIT, and GitHub
+•Analyzed visualizations and presented findings to center’s researchers
+Research Intern June 2020 – October 2020
+Center for Human Dynamics, San Diego State University San Diego, CA
+•Compiled San Diego COVID Data using Excel, Pandas, and Python
+•Created multi-linear regression model in R to analyze correlation between ethnicity, income, population density,
+and COVID cases
+•Assisted in data preparation and offered insights for article titled, ”COVID-19 Impact Disparities among Ethnicity
+Groups in San Diego County.”
+•Wrote 15-page paper and presented findings to center’s researchers
+Projects
+Linear Function Approximation solution to the Travelling Salesman Problem |
+Python, Numpy, Jupyter Notebooks, Pandas June 2021 – August 2021
+•Created custom linear function approximation reinforcement learning model with an actor-critic architecture to
+solve the classic NP-hard Traveling Salesman Problem
+•Independently wrote and published research paper in the Journal of Student Research
+•Received Distinguished Paper Award from Summer STEM Institute (top 10 papers out of over 100)
+Tensorflow Ring Detection |Python, Tensorflow lite, Git September 2020 – March 2021
+•Designed custom neural network and created Tensorflow lite object detection model for detecting number of rings
+in varying conditions
+•Analyzed video data and performed data augmentation for over 99% accuracy
+•Modified model version and adjusted size to be compatible with Robot Controller
+Sci-kit Learn Instrument Classification |Python, Sci-kit Learn, Numpy February 2020 – May 2020
+•Created Sci-kit learn model to classify which instruments are playing in a .wav file
+•Performed fourier transform on audio
+•Adjusted for overfitting and achieved over 99% accuracy on evaluation data
+Django Twitter |Python, Django, HTML/CSS, Bootstrap, Git February 2021 – May 2021
+•Constructed twitter-like website with basic features and Python-backend
+•Created basic Twitter-like UI
+•Added interactive features such as commenting, tweeting, and liking posts across multiple users
+Technical Skills
+Languages : Python, C++, Javascript, HTML/CSS, MATLAB, R
+Frameworks : Tensorflow, Sci-kit Learn, OpenCV, Django, WordPress
+Developer Tools : Git, Visual Studio, Valgrind
+Libraries : Pandas, NumPy, Matplotlib, Scipy
